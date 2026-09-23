@@ -1,6 +1,4 @@
-__version__ = "0.1.4"
+from ._native import validate_profiles
 
-try:
-    from . import _native
-except ImportError:
-    pass
+__all__ = ["validate_profiles"]
+__version__ = "0.2.0"
